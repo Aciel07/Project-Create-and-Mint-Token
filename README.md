@@ -1,6 +1,6 @@
 # Project-Create-and-Mint-Token
 
-This repository contains an ERC20 token contract called **Mercury** created with Solidity and deployed using the Remix IDE. The token is based on OpenZeppelin's standard ERC20 implementation, ensuring it is fully compliant and secure. It includes advanced functionalities such as minting, burning, and supply-reducing transfers.
+This repository contains an ERC20 token contract called **Mercury** created with Solidity and deployed using the Remix IDE. 
 
 ## Features
 - **Minting**: The contract owner can mint new tokens to specified accounts.
