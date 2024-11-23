@@ -23,14 +23,9 @@ contract Mercury is ERC20, ERC20Permit, Ownable {
         _burn(msg.sender, amount);
     }
 
-    function transfer(address recipient, uint256 amount) public override returns (bool) {
-        super.transfer(recipient, amount);
-
-        uint256 burnAmount = amount;
-        if (burnAmount > 0) {
-            _burn(msg.sender, burnAmount);
-        }
-
+    function transfer(address to, uint256 amount) public override returns (bool) {
+        _transfer(msg.sender, to, amount);
         return true;
     }
+
 }
